@@ -3,20 +3,30 @@ body {
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: 0.9;
   text-align: center;
-}
-header {
-  width: 100%;
-  height: 67px;
-  border-bottom: 1px solid seashell;
-  align-items: center;
-  z-index: 1;
 }
 .flex-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+/* All division*/
+.all {
+opacity: 0.9;
+width: 1200px;
+margin: auto;
+justify-content: center;
+}
+div {
+  display: block;
+}
+/*Header and navigation*/
+header {
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+  z-index: 1;
 }
 nav {
   text-align: right;
@@ -35,24 +45,66 @@ nav span a {
   padding-left: 10px;
   text-align: right;
 }
-/*Trying to figure out banner and picture*/
-.mission{
-  display: flex;
-  background-image: url("../resources/img-mission-background.jpg");
+/* banner and background picture*/
+#mission{
   height: 700px;
-  width: 1200px;
-  align-content: center;
-  align-items: center;
-  flex-shrink: 1;
+  background-image: url("../resources/img-mission-background.jpg");
+  padding-top: 70px;
 }
 .banner {
   background-color: black;
-  height: 120px;
-  width: 1200px;
-  padding: 10px 0px;
+  width: 100%;
+  margin: auto;
 }
 /*Images for the tea*/
-.flex-container.tea img {
+.stock img {
   height: 200px;
   width: 300px;
+  padding: 15px 15px 10px 15px;
+}
+.stock span{
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+/* featuredte section*/
+#featuredtea {
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 55px;
+}
+/*Location section*/
+#location {
+  height: 500px;
+  background-image: url("../resources/img-locations-background.jpg");
+}
+#location h2 {
+  padding-top: 70px;
+  padding-bottom: 0px;
+  margin-bottom: 15px;
+}
+.places {
+  width: 300px;
+  background-color: black;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 40px;
+}
+.flex-container.locations {
+  flex-basis: center;
+}
+/*Contact*/
+.contact {
+  height: 200px;
+  margin: auto;
+}
+/*Footer*/
+footer {
+  text-align: left;
+  margin-left: 20px;
+  padding: 0px;
 }
