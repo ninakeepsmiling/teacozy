@@ -55,6 +55,13 @@ nav span a {
   background-color: black;
   width: 100%;
   margin: auto;
+  padding: 0px;
+}
+.banner h2 {
+  margin: 10px;
+}
+div h4 {
+  margin: 10px;
 }
 /*Images for the tea*/
 .stock img {
@@ -79,11 +86,12 @@ nav span a {
 #location {
   height: 500px;
   background-image: url("../resources/img-locations-background.jpg");
+  align-content: center;
 }
 #location h2 {
   padding-top: 70px;
-  padding-bottom: 0px;
-  margin-bottom: 15px;
+  margin: auto;
+
 }
 .places {
   width: 300px;
@@ -92,15 +100,19 @@ nav span a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 40px;
+  margin: 15px 20px;
 }
 .flex-container.locations {
   flex-basis: center;
+  justify-content: center;
+
 }
 /*Contact*/
 .contact {
   height: 200px;
-  margin: auto;
+}
+.contact h2 {
+  margin-top: 10px;
 }
 /*Footer*/
 footer {
